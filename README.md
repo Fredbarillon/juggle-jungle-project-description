@@ -24,7 +24,7 @@ The project introduces a custom ServiceNow application designed to act as Juggle
 
 The solution was designed to improve operational visibility, standardise internal processes, clarify employee responsibilities and provide each role with access to the information relevant to their work.
 
-[PROJECT FILE](Juggle_Jungle_Transformation_Numerique_v2_FR.pdf)|
+[PROJECT FILE](Juggle_Jungle_Digital_Transformation_v2.pdf)|
 
 ## Key Features
 
