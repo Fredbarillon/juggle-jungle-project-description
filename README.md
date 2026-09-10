@@ -24,7 +24,7 @@ The project introduces a custom ServiceNow application designed to act as Juggle
 
 The solution was designed to improve operational visibility, standardise internal processes, clarify employee responsibilities and provide each role with access to the information relevant to their work.
 
-[PROJECT FILE](Juggle_Jungle_Digital_Transformation_v2.pdf)|
+[View the full project documentation](Juggle_Jungle_Digital_Transformation_v2.pdf)
 
 ## Key Features
 
@@ -177,40 +177,43 @@ The `Equipment` table acts as the parent of `Internal Equipment` and `Customer E
 <img width="1877" height="887" alt="knowledge-base-article" src="https://github.com/user-attachments/assets/903ab067-f419-4fe0-a5e7-dce40ae54f50" />
 
 
-Installation
+## Installation
 
-This application is intended for demonstration and portfolio purposes. It should be imported into a non-production ServiceNow instance.
+> This application is intended for demonstration and portfolio purposes. It should be imported into a non-production ServiceNow instance.
 
-Prerequisites
-A non-production ServiceNow instance
-Administrator access
-App Engine Studio
-Required dependencies:
-Task table schema
-System Import Sets
-A GitHub credential with access to the source repository
-Import from Source Control
-Create a valid GitHub credential in ServiceNow using Connections & Credentials → Credentials.
-Open App Engine Studio.
-From the My Apps page, select Import app or Import from source control.
-Select HTTPS as the network protocol.
+### Prerequisites
 
-Enter the following repository URL:
+- A non-production ServiceNow instance
+- Administrator access
+- App Engine Studio
+- Required dependencies:
+  - Task table schema
+  - System Import Sets
+- A GitHub credential with access to the source repository
 
-https://github.com/Fredbarillon/juggle-jungle-servicenow.git
+### Import from Source Control
 
-Select the GitHub credential and the branch containing the application.
-Start the import and allow ServiceNow to validate the generated files and checksum.
-Select the imported application when the operation is complete.
-Post-Installation Configuration
+1. Create a valid GitHub credential in ServiceNow using **Connections & Credentials → Credentials**.
+2. Open **App Engine Studio**.
+3. From **My Apps**, select **Import app** or **Import from source control**.
+4. Select **HTTPS** as the network protocol.
+5. Enter the repository URL:
+
+   `https://github.com/Fredbarillon/juggle-jungle-servicenow.git`
+
+6. Select the GitHub credential and the branch containing the application.
+7. Start the import and allow ServiceNow to validate the generated files and checksum.
+8. Select the imported application when the operation is complete.
+
+### Post-Installation Configuration
 
 The source-control repository contains the scoped application files but not the complete instance data. After importing the application:
 
-Create or configure the required users and groups.
-Assign the imported Juggle Jungle roles.
-Add demonstration or operational records.
-Configure outbound email if notifications need to be tested.
-Verify and test the flows, notifications, dashboards and role-based permissions.
+- Create or configure the required users and groups.
+- Assign the imported Juggle Jungle roles.
+- Add demonstration or operational records.
+- Configure outbound email if notifications need to be tested.
+- Verify the flows, notifications, dashboards and role-based permissions.
 
 Do not manually edit the generated ServiceNow source files, as external changes may cause a checksum mismatch during import.
 
