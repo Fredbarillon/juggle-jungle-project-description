@@ -1,7 +1,8 @@
 
 # Juggle Jungle - ServiceNow Operational Platform
 
-A portfolio project detailing the design and development of a custom ServiceNow application.
+A portfolio project detailing the design and development of a custom ServiceNow application. 
+Demo records, users, group memberships and attachments are not included in the source-control repository. Test data must be created manually after installation.
 
 ## Project Overview
 
@@ -132,6 +133,7 @@ The `Equipment` table acts as the parent of `Internal Equipment` and `Customer E
 
 `Activity Registration`, `Equipment Requirement` and `Preparation Task` connect students, equipment and operational responsibilities to the relevant course or event.
 
+
 ## ServiceNow Technologies Used
 
 | ServiceNow technology              | Use in the project                                                                             |
@@ -173,5 +175,40 @@ The `Equipment` table acts as the parent of `Internal Equipment` and `Customer E
 <img width="1877" height="887" alt="knowledge-base-article" src="https://github.com/user-attachments/assets/903ab067-f419-4fe0-a5e7-dce40ae54f50" />
 
 
+Installation
 
+This application is intended for demonstration and portfolio purposes. It should be imported into a non-production ServiceNow instance.
+
+Prerequisites
+A non-production ServiceNow instance
+Administrator access
+App Engine Studio
+Required dependencies:
+Task table schema
+System Import Sets
+A GitHub credential with access to the source repository
+Import from Source Control
+Create a valid GitHub credential in ServiceNow using Connections & Credentials → Credentials.
+Open App Engine Studio.
+From the My Apps page, select Import app or Import from source control.
+Select HTTPS as the network protocol.
+
+Enter the following repository URL:
+
+https://github.com/Fredbarillon/juggle-jungle-servicenow.git
+
+Select the GitHub credential and the branch containing the application.
+Start the import and allow ServiceNow to validate the generated files and checksum.
+Select the imported application when the operation is complete.
+Post-Installation Configuration
+
+The source-control repository contains the scoped application files but not the complete instance data. After importing the application:
+
+Create or configure the required users and groups.
+Assign the imported Juggle Jungle roles.
+Add demonstration or operational records.
+Configure outbound email if notifications need to be tested.
+Verify and test the flows, notifications, dashboards and role-based permissions.
+
+Do not manually edit the generated ServiceNow source files, as external changes may cause a checksum mismatch during import.
 
