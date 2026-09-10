@@ -26,7 +26,7 @@ Le projet introduit une application ServiceNow personnalisée conçue pour servi
 
 La solution a été conçue pour améliorer la visibilité opérationnelle, standardiser les processus internes, clarifier les responsabilités des employés et fournir à chaque rôle un accès aux informations utiles à son travail.
 
-[DOSSIER DE PROJET](Juggle_Jungle_Transformation_Numerique_v2_FR.pdf) |
+[Lien vers la documentation du projet](Juggle_Jungle_Transformation_Numerique_v2_FR.pdf) |
 
 ## Fonctionnalités principales
 
