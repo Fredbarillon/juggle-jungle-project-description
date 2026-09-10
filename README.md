@@ -120,15 +120,38 @@ erDiagram
 
 ```mermaid
 erDiagram
+    USER ||--o{ COMMUNICATION_CONTENT : assigned_to
     COURSE_EVENT |o--o{ COMMUNICATION_CONTENT : promotes
     EQUIPMENT |o--o{ COMMUNICATION_CONTENT : features
     BRAND |o--o{ COMMUNICATION_CONTENT : features
     SUPPLIER |o--o{ COMMUNICATION_CONTENT : features
 ```
 
+
 The `Equipment` table acts as the parent of `Internal Equipment` and `Customer Equipment`.
 
 `Activity Registration`, `Equipment Requirement` and `Preparation Task` connect students, equipment and operational responsibilities to the relevant course or event.
+
+## ServiceNow Technologies Used
+
+| ServiceNow technology              | Use in the project                                                                             |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **App Engine Studio**              | Development of the scoped Juggle Jungle application and its application experiences            |
+| **Task-Based Records**             | Use of the ServiceNow Task structure for repair requests and preparation tasks                 |
+| **Forms, Lists and Related Lists** | Role-appropriate record layouts, operational lists, filters and linked-record views            |
+| **Import Sets and Transform Maps** | Import and transformation of customer data from an external file into the application          |
+| **Workflow Studio**                | Record-triggered and scheduled flows for assignments, reminders and recurring activities       |
+| **Custom Flow Actions**            | Server-side logic used to calculate the next occurrence of recurring classes                   |
+| **Server-Side JavaScript**         | Date processing and recurrence logic using ServiceNow API: `GlideDateTime`             |
+| **Notifications and Events**       | Email notifications, in-platform bell notifications and custom event triggering                |
+| **Platform Analytics**             | Role-based dashboards, reports, charts and operational record lists                            |
+| **Knowledge Management**           | Dedicated knowledge base, categories, article review and publication                           |
+| **Users, Groups and Roles**        | Access organised according to the responsibilities of the Director, HR Manager and Technicians |
+| **Access Control Lists**           | Table and record access secured through application roles and ACL rules                        |
+| **Theme Builder**                  | Custom logo, colours and visual identity for the Juggle Jungle instance                        |
+| **Attachments**                    | Storage of equipment images and operational PDF documents on relevant records                  |
+| **User Impersonation**             | Functional and permission testing from the perspective of each employee role                   |
+| **Git Source Control**             | Versioning and backup of the scoped application in a dedicated GitHub repository               |
 
 
 ## Screenshots
