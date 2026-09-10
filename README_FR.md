@@ -1,4 +1,4 @@
-[English](README.md) | **Français**
+[English](README.md) |
 
 # Juggle Jungle - Plateforme opérationnelle ServiceNow
 
