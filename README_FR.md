@@ -25,7 +25,9 @@ L'entreprise fictive emploie quatre personnes qui assurent des missions de direc
 Le projet introduit une application ServiceNow personnalisée conçue pour servir de plateforme opérationnelle centrale à Juggle Jungle. Elle structure et relie les activités internes de l'entreprise sans remplacer ses systèmes existants de point de vente, de commerce électronique, de comptabilité ou de ressources humaines.
 
 La solution a été conçue pour améliorer la visibilité opérationnelle, standardiser les processus internes, clarifier les responsabilités des employés et fournir à chaque rôle un accès aux informations utiles à son travail.
+
 [DOSSIER DE PROJET](Juggle_Jungle_Digital_Transformation_v2.pdf) |
+
 ## Fonctionnalités principales
 
 ### Gestion des réparations
