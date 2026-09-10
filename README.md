@@ -126,11 +126,9 @@ erDiagram
     SUPPLIER |o--o{ COMMUNICATION_CONTENT : features
 ```
 
-The `Equipment` table acts as the parent of `Internal Equipment` and `Customer Equipment`. This allows shared equipment information to be reused while maintaining specialised records for company-owned and customer-owned items.
+The `Equipment` table acts as the parent of `Internal Equipment` and `Customer Equipment`.
 
 `Activity Registration`, `Equipment Requirement` and `Preparation Task` connect students, equipment and operational responsibilities to the relevant course or event.
-
-The `Administrative Document` table supports document tracking and reporting but is not shown in the diagrams because it does not participate in the main relationships above.
 
 
 ## Screenshots
